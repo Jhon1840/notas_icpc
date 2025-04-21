@@ -53,6 +53,7 @@ por ejemplo un triangulo de a=2 , b=4, c=6 seria degenerado ya que formaria una 
 
 # Reordenamiento (4 digitos)
 
+### la forma mas optima de reordenar 4 digitos es:
 
 ```
 	if(a1>a2) swap(a1, a2);
