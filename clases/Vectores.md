@@ -93,28 +93,29 @@ int y[] = {7, 8, 9};  // tamaño 3
 
 ```cpp
 #include <iostream>
+using namespace std;
 int main() {
     const int N = 8;
     int v[N] = {5, 3, 8, 1, 9, 2, 4, 7};
 
     // Mostrar el array
-    std::cout << "Vector v: ";
+    cout << "Vector v: ";
     for (int i = 0; i < N; ++i)
-        std::cout << v[i] << " ";
-    std::cout << "\n";
+        cout << v[i] << " ";
+    cout << "\n";
 
     // Suma de todos los elementos
     int suma = 0;
     for (int i = 0; i < N; ++i)
         suma += v[i];
-    std::cout << "Suma: " << suma << "\n";
+    cout << "Suma: " << suma << "\n";
 
     // Encontrar el máximo
     int maximo = v[0];
     for (int i = 1; i < N; ++i)
         if (v[i] > maximo)
             maximo = v[i];
-    std::cout << "Máximo: " << maximo << "\n";
+    cout << "Máximo: " << maximo << "\n";
 
     return 0;
 }
